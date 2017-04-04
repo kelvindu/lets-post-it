@@ -18,7 +18,7 @@
 
     <div class="mdl-card mdl-cell mdl-cell--8-col mdl-shadow--6dp">
       <!-- Floating Multiline Textfield -->
-      <form action="{{$post->id}}/comments" method="POST">
+      <form action="{{ route('post_comment',['post' => $post->id])}}" method="POST">
         {{ csrf_field() }}
 
         <div class="mdl-textfield mdl-js-textfield">

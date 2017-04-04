@@ -4,7 +4,7 @@
   <div class="mdl-grid">
     <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
 
-    <form class="mdl-card mdl-cell--8-col mdl-shadow--6dp" action="/posts" method="POST">
+    <form class="mdl-card mdl-cell--8-col mdl-shadow--6dp" action="{{ route('post_post') }}" method="POST">
       {{ csrf_field() }}
       <div class="mdl-card__title">
         <h1 class="mdl-card__title-text">Create new post</h1>

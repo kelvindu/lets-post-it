@@ -9,7 +9,7 @@
             <h2>{{ $category->name }}</h2>
             <p>{{ $category->body }}</p>
             <div class="mdl-card__actions mdl-card--border">
-              <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="/?category={{ $category->id }}">
+              <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="{{route('home',['category' => $category->id])}}">
                 I wanna see it!
               </a>
             </div>

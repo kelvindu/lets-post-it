@@ -6,9 +6,9 @@
 
 <title>{{ config('app.name') }} || What's on your mind today?</title>
 
-<link rel="manifest" href="/js/manifest.json">
+<link rel="manifest" href="{{ asset('js/manifest.json') }}">
 
-<link rel="shortcut icon" href="images/icons/icon-512x512.png">
+<link rel="shortcut icon" href="{{ asset('images/icons/icon-512x512.png') }}">
 
 <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
 <!--

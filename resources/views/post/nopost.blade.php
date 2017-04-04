@@ -12,7 +12,7 @@
     </div>
     <hr>
     <div class="mdl-card__actions">
-      <a href="/posts/create" class="mdl-button">Then let's post something!</a>
+      <a href="{{ route('create_post') }}" class="mdl-button">Then let's post something!</a>
     </div>
 
   </div>

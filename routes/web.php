@@ -21,11 +21,11 @@ Route::get('/','HomeController@index')->name('home');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
-Route::get('/about','HomeController@about');
+Route::get('/about','HomeController@about')->name('about');
 
-Route::get('/posts/create','PostController@create');
-Route::get('/posts/{post}','PostController@index');
-Route::post('/posts','PostController@store');
-Route::post('/posts/{post}/comments','CommentController@store');
+Route::get('/posts/create','PostController@create')->name('create_post');
+Route::get('/posts/{post}','PostController@index')->name('single_post');
+Route::post('/posts','PostController@store')->name('post_post');
+Route::post('/posts/{post}/comments','CommentController@store')->name('post_comment');
 
-Route::get('/category','CategoryController@index');
+Route::get('/category','CategoryController@index')->name('category');
